@@ -1,0 +1,12 @@
+.header {
+  @include border-bottom(#ececec);
+
+  &__nav {
+    @include centeredFlex(flex);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    list-style: none;
+  }
+}

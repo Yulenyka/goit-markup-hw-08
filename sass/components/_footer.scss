@@ -1,0 +1,84 @@
+.footer {
+  padding: 60px 0;
+  background-color: $accent-white-color;
+}
+.container__footer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 70px;
+}
+.logo__footer {
+  color: $sub-text-color;
+}
+.address {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address__contact {
+  display: block;
+  margin-top: 9px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+}
+}
+.address__map {
+  display: block;
+  text-decoration: none;
+  color: $sub-text-color;
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+}
+}
+
+.footer-form {
+  display: inline-flex;
+  gap: 12px;
+}
+
+.footer-form__input {
+  @include centeredFlex;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-form__button {
+  @include centeredFlex;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 0.06em;
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: $secondary-white-color;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.footer-form__icon {
+  margin-left: 10px;
+}
+
+

@@ -1,0 +1,87 @@
+ body {
+  font-family: $basic;
+  letter-spacing: 0.03em;
+  color: $primery-text-color;
+  background-color: $secondary-white-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  cursor: pointer;
+
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+select:focus {
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+textarea {
+  cursor: pointer;
+
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+}
+
+.titlle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.column__titlle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: left;
+  color: $sub-text-color;
+}
