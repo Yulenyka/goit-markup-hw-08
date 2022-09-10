@@ -1,7 +1,12 @@
 .trend {
+  display: none;
   padding-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
-.trend-list{
+.trend-list {
   display: flex;
   gap: 30px;
 }

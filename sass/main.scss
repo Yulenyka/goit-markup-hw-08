@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixin";
+@import "./utils/breakpoints";
 @import "./components/basic";
 @import "./components/header";
 @import "./components/logo";
@@ -12,7 +13,6 @@
 @import "./components/client";
 @import "./components/footer";
 @import "./components/modal";
-
 
 
 // @import ".";

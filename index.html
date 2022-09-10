@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
     <!-- Підключаємо стилі -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
@@ -17,23 +17,56 @@
     <nav class="header__nav">
       <!-- Лого -->
       <a href="./index.html" class="logo"><span class="logo__span">Web</span>Studio</a>
-      <!-- Меню -->
-      <ul class="header__menu menu">
-        <li class="menu__item"><a href="./index.html" class="menu__link--active">Студія</a></li>
-        <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
-      </ul>
-       <!-- Контакти -->
-      <ul class="header__contacts contacts">
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
-            <use href="./images/icons.svg#envelope" ></use></svg>info@devstudio.com</a>
-         </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="16" height="12">
-            <use href="./images/icons.svg#smartphone" ></use></svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <!-- Мобільне меню -->
+          <button type="button" class="header__menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-close" href="./images/icons.svg#close"></use>
+              <use class="icon-menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+        <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation">
+               <!-- Меню -->
+                  <ul class="header__menu menu">
+                      <li class="menu__item"><a href="./index.html" class="menu__link--active">Студія</a></li>
+                      <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+                      <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+                  </ul>
+            </div>
+            <div class="contacts">
+                <!-- Контакти -->
+                  <ul class="header__contacts contacts">
+                      <li class="contacts__item">
+                          <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
+                            <use href="./images/icons.svg#envelope" ></use></svg>info@devstudio.com</a>
+                      </li>
+                      <li class="contacts__item">
+                          <a class="contacts__link contacts__link--active" href="tel:+380961111111"><svg class="contacts__icon" width="16" height="12">
+                            <use href="./images/icons.svg#smartphone" ></use></svg>+38 096 111 11 11</a>
+                      </li>
+                  </ul>
+                   <ul class="social-mob__group mobile-social">
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="link to instagram">
+             Instagram
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="link to twitter">
+              Twitter
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="link to facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="link to linkedin">Linkedin</a>
+          </li>
+        </ul>  
+            </div>
+        </div>
     </nav>
   </div>
 </header>
@@ -402,6 +435,7 @@
     </div>
 </div>
 
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 
 </body>

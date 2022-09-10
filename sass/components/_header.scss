@@ -1,12 +1,16 @@
 .header {
   @include border-bottom(#ececec);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  &__nav {
-    @include centeredFlex(flex);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    list-style: none;
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
   }
 }

@@ -1,8 +1,12 @@
- body {
+body {
   font-family: $basic;
   letter-spacing: 0.03em;
   color: $primery-text-color;
   background-color: $secondary-white-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,
@@ -60,28 +64,48 @@ textarea {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
+
+  @media screen and (min-width: 480px) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: $tablet;
+  }
+  @media screen and (min-width: 1200px) {
+    width: $desktop;
+  }
 }
 
 .titlle {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
+    line-height: 1.17;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .column__titlle {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: left;
   color: $sub-text-color;
 }
