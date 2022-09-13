@@ -18,54 +18,58 @@
   background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
+    screen and (o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/responsive/header-mobile-2x.jpeg");
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/responsive/header-mobile-2x.jpeg");
   }
   @media (min-device-pixel-ratio: 3),
+  screen and (o-min-device-pixel-ratio: 3/1),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
     background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/responsive/header-mobile-3x.jpeg");
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/responsive/header-mobile-3x.jpeg");
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .headerbar {
     background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/responsive/header-tablet-1x.jpeg");
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/responsive/header-tablet-1x.jpeg");
 
     @media (min-device-pixel-ratio: 2),
+    screen and (o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: 
-      linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),url("../images/responsive/header-tablet-2x.jpeg");
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/responsive/header-tablet-2x.jpeg");
     }
     @media (min-device-pixel-ratio: 3),
+    screen and (o-min-device-pixel-ratio: 3/1),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
-        background-image: 
-        linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),url("../images/responsive/header-tablet-3x.jpeg");
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/responsive/header-tablet-3x.jpeg");
     }
   }
 }
@@ -73,31 +77,33 @@
   .headerbar {
     height: 600px;
     background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/responsive/header-desktop-1x.jpeg');
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/responsive/header-desktop-1x.jpeg");
 
     @media (min-device-pixel-ratio: 2),
+    screen and (o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-       background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/responsive/header-desktop-2x.jpeg");
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/responsive/header-desktop-2x.jpeg");
     }
     @media (min-device-pixel-ratio: 3),
+    screen and (o-min-device-pixel-ratio: 3/1),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
-        background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/responsive/header-desktop-3x.jpeg");
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/responsive/header-desktop-3x.jpeg");
     }
   }
 }
