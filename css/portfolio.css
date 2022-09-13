@@ -88,15 +88,15 @@ textarea:focus {
 }
 
 .titlle {
-  margin-bottom: 50px;
   margin-bottom: 30px;
   font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .titlle {
     font-size: 36px;
-    line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -194,6 +194,10 @@ textarea:focus {
 
 .menu-container {
   z-index: 2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  list-style: none;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -203,10 +207,6 @@ textarea:focus {
     left: 0;
     width: 100vw;
     height: 100vh;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    list-style: none;
-    background-color: #ffffff;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -378,6 +378,7 @@ textarea:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-color: #ffffff;
     gap: 10px;
   }
 }
@@ -408,12 +409,20 @@ textarea:focus {
 }
 @media screen and (min-width: 768px) {
   .contacts__link {
+    font-size: 12px;
+    line-height: 1.16px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -452,6 +461,20 @@ textarea:focus {
     display: none;
   }
 }
+.project__titlle {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .project-button {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -105,13 +105,14 @@
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.36;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $sub-text-color;
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
+    line-height: 1.36;
   }
 }
 .headerbar__btn {

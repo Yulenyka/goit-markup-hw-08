@@ -1,3 +1,6 @@
+.project__titlle {
+  @include transparent;
+}
 .project-button {
   @include centeredFlex;
   margin-bottom: 50px;
