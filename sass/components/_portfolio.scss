@@ -57,6 +57,8 @@
 }
 
 .project-card__item {
+  display: flex;
+  flex-direction: column;
   width: calc((100% - 60px) / 3);
 
   @include transition(box-shadow);
@@ -76,7 +78,7 @@
 
   &:first-child .project-card__content {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      height: 147px;
+      flex-grow: 1;
     }
   }
 }
